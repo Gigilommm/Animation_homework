@@ -1,0 +1,37 @@
+.line-base{
+    height: 111px;
+    width: 500px;
+    background: white;
+    border: 14px solid #FFA500;
+    position: absolute;
+    top: 193px;
+    left: 212px;
+}
+
+.line{
+    height: 113px;
+    width: 115px;
+    background: orange;
+    position: absolute;
+    border: 10px orange;
+    top: 206px;
+    left: 125px;
+}
+.moving_line{
+    animation-name: slide;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(100px)
+}
+    50%{
+        transform:translate(500px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
